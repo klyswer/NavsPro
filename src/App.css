@@ -1,8 +1,15 @@
-.App {
+.App{
   text-align: center;
 }
 
-.App-logo {
+.btn-white{
+  background: gray;
+}
+
+.caja_texto_cards{
+height: 100px;
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +42,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
