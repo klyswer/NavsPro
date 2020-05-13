@@ -1,0 +1,21 @@
+.img_modal{
+    border: outset 15px rgba(0, 92, 230, 0.8) !important;
+}
+.header_bg{
+    background: rgba(0, 92, 230, 1);
+    
+}
+
+.title_modal{
+    color: white;
+    font-weight: 700 !important;
+    margin-left: 1rem;
+}
+
+.close span{
+    color: white;
+}
+
+.prueba{
+    background: violet;
+}

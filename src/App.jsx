@@ -24,7 +24,7 @@ const Textos = {
     subtitle3 : 'Este es otro título'
   },
   h1:{
-    galeria : 'Especialistas en materias primas'
+    galeria : 'Deslice y vea nuestro catalogo de materias primas'
   }
 }
 
@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <Header title="Mp-R&R" id="1"/>
       <Slider titleImg1={Textos.titles.title1} titleImg2={Textos.titles.title2} titleImg3={Textos.titles.title3}/>
-      <Galery className="Galery" data={Textos.h1.galeria} />
+      <Galery className="Galery" titleGalery={Textos.h1.galeria} />
       <Footer/>
     </div>
   );

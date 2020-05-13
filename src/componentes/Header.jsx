@@ -14,9 +14,8 @@ class Header extends Component {
 
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="primary" variant="dark">
           <Navbar.Brand href="/home">
-          {/* {this.props.title+' '+this.props.id} */}
           <img
-            src="./images/logo192.png"
+            src="./images/web_01.png"
             width="30"
             height="30"
             className="d-inline-block align-top"
@@ -27,7 +26,7 @@ class Header extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="#Productos">Productos</Nav.Link>
-              <Nav.Link href="#Ubicación">Ubicación</Nav.Link>
+              <Nav.Link href="#Direccion">Dirección</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
