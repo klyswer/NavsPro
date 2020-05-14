@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/klyswer/Mpr-r.git/precache-manifest.83147e305ca2440b9a09a990a42f466c.js"
+  "/klyswer/Mpr-r.git/precache-manifest.9dcd8256e050a34bdb08c83c8928763c.js"
 );
 
 self.addEventListener('message', (event) => {
