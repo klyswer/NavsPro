@@ -1,0 +1,10 @@
+.btn_header{
+    color: rgb(210, 235, 255) !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn_header:active, .btn_header:hover, .btn_header:focus{
+    color: rgb(245, 245, 245) !important;
+    font-weight: 600;
+}

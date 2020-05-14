@@ -15,8 +15,8 @@ import Galery from './componentes/Galery.jsx';
 const Textos = {
   titles : {//Aquí controlaremos todos los titulos que va a llevar el slider o carousel.
     title1 : 'Bienvenidos a Mpr&r',
-    title2 : 'Otro titulo',
-    title3 : 'Bienvenidos a Mpr&r'
+    title2 : 'Materias primas de calidad.',
+    title3 : 'Lava constantemente tus manos.'
   },
   subtitles : {
     subtitle1 : 'Toda la diversidad en Mpr&r',

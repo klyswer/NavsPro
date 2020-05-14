@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Col from "react-bootstrap/Col";
 
 
-const NavGalery = (props)=> {
+const NavGalery = ()=> {
 
   return (
     <>

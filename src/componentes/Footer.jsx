@@ -19,13 +19,13 @@ function Footer() {
             </div>
 
             <div className="col-sm-12 col-md-6">
-              <h6 className="mb-3">Contacto</h6>
-              <ul className="footer-links">
-                <li><a href="/#">About Us</a></li>
-                <li><a href="/#">Contact Us</a></li>
-                <li><a href="/#">Contribute</a></li>
-                <li><a href="/#">Privacy Policy</a></li>
-                <li><a href="/#">Lorem</a></li>
+              <h6 className="mb-5">Datos de contacto</h6>
+              <ul className="footer-links text-left">
+                <li><div>Materias Primas R&R, Región Metropolitana.</div></li>
+                <li><a href="# ">Dirección: <span>La Capilla 7630, Cerro Navia.</span> </a></li>
+                <li><a href="# ">Telefonos: <span>22 22223323 / 22 32333323</span> </a></li>
+                <li><a href="# ">Email: <span>ventas@detergentesryr.cl</span></a></li>
+                <li><a href="# ">Atención: <span>8:00am - 6:00pm</span></a></li>
               </ul>
             </div>
 
@@ -35,17 +35,17 @@ function Footer() {
         <div className="d-flex justify-content-center align-items-center">
           <div className="row">
             <div className="col-md-12 mb-3">
-              <p className="copyright-text">Copyright &copy; 2020 Todos los derechos reservados
-                <a href="/#"> Mp-R&R.com</a>.
+              <p className="copyright-text">Copyright &copy; 2020 Todos los derechos reservados.
+                <a href="# "> www.mp-ryr.com</a>.
               </p>
             </div>
 
             <div className="col-md-12">
               <ul className="social-icons">
-                <li><a className="facebook" href="/#"><i className="fa fa-facebook"></i></a></li>
-                <li><a className="twitter" href="/#"><i className="fa fa-twitter"></i></a></li>
-                <li><a className="dribbble" href="/#"><i className="fa fa-dribbble"></i></a></li>
-                <li><a className="linkedin" href="/#"><i className="fa fa-linkedin"></i></a></li>
+                <li><a className="facebook" href="# "><i className="fa fa-facebook"></i></a></li>
+                <li><a className="twitter" href="# "><i className="fa fa-twitter"></i></a></li>
+                <li><a className="dribbble" href="# "><i className="fa fa-dribbble"></i></a></li>
+                <li><a className="linkedin" href="# "><i className="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>

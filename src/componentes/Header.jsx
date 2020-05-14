@@ -1,23 +1,19 @@
 import React, { Component} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-
+import './styles/header.css';
 
 class Header extends Component {
   
   render() {
     return (
       <>
-        {/* <h1>Hello, {this.props.id}</h1>
-      <button className="btn btn-primary">helloWorld</button> */}
-
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="primary" variant="dark">
           <Navbar.Brand href="/home">
           <img
             src="./images/web_01.png"
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             className="d-inline-block align-top"
             alt=""
           />
@@ -25,8 +21,8 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#Productos">Productos</Nav.Link>
-              <Nav.Link href="#Direccion">Dirección</Nav.Link>
+              <Nav.Link className="btn_header" href="#Productos">Productos</Nav.Link>
+              <Nav.Link className="btn_header" href="#Direccion">Dirección</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -42,9 +38,9 @@ class Header extends Component {
               </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link href="#SendEmail">ventas@detergentesryr.cl</Nav.Link>
-              <Nav.Link eventKey={2} href="#Login">
-                Ingresar
+              <Nav.Link className="btn_header" href="#SendEmail">ventas@detergentesryr.cl</Nav.Link>
+              <Nav.Link className="btn_header" eventKey={2} href="#Login">
+                +56 2 2234 4343 
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
