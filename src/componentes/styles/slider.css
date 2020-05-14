@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     /* align-items: start; */
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
 }
 .title_slider span{
     margin-top: 10px;
