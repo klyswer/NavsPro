@@ -1,9 +1,19 @@
 .img_modal{
-    border: outset 15px rgba(0, 92, 230, 0.8) !important;
+    border: outset 5px #152872 !important;
+    border-radius: 5% !important;
 }
 .header_bg{
-    background: rgba(0, 92, 230, 1);
+    background: #000040;
     
+}
+
+.button_send{
+    background: #000040 !important;
+    border: none !important;
+}
+.button_send:hover{
+    background: #000074 !important;
+    border: none !important;
 }
 
 .title_modal{
@@ -16,6 +26,13 @@
     color: white;
 }
 
-.prueba{
-    background: violet;
+.format_style{
+    border: 1px #000074 solid;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 4px 8px;
+    color: #018599;
+    font-weight: 700;
+    font-size: 18px;
 }

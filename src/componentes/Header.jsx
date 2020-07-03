@@ -8,8 +8,8 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Navbar fixed="top" collapseOnSelect expand="lg" bg="primary" variant="dark">
-          <Navbar.Brand href="/home">
+        <Navbar className="bg_pr"  fixed="top" collapseOnSelect expand="lg" variant="dark">
+          <Navbar.Brand href="/">
           <img
             src="./images/web_01.png"
             width="40"

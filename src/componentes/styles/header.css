@@ -1,10 +1,17 @@
 .btn_header{
-    color: rgb(210, 235, 255) !important;
-    font-size: 20px;
+    color: rgb(255, 255, 255) !important;
+    font-size: 19px;
     font-weight: 500;
+    transition: linear 0.3s;
 }
 
 .btn_header:active, .btn_header:hover, .btn_header:focus{
-    color: rgb(245, 245, 245) !important;
+    color: rgba(250, 250, 250, 0.7) !important;
+    /* color: #f78a8a !important; */
     font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.bg_pr {
+    background-color: #17a2b8 ;
 }
