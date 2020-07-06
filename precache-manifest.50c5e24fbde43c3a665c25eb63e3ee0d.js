@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2f4841004d951196379eb80f37e91ea",
+    "revision": "2eaf113b2c5e680515d5329790a306b0",
     "url": "/klyswer/Mpr-r.git/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/klyswer/Mpr-r.git/static/css/3.47e06e2e.chunk.css"
   },
   {
-    "revision": "8a07398b27427c1b26f4",
+    "revision": "58fd2e55d8e4bdcba9b5",
     "url": "/klyswer/Mpr-r.git/static/css/main.6fcd08e8.chunk.css"
   },
   {
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/klyswer/Mpr-r.git/static/js/9.d3a8fcad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a07398b27427c1b26f4",
-    "url": "/klyswer/Mpr-r.git/static/js/main.d64c2f29.chunk.js"
+    "revision": "58fd2e55d8e4bdcba9b5",
+    "url": "/klyswer/Mpr-r.git/static/js/main.0a3b7b9d.chunk.js"
   },
   {
     "revision": "cdf018d4eb8374f6b73d",
