@@ -30,9 +30,34 @@ function ModalProduct(props) {
 
   return (
     <>
-      <Button variant="outline-info" onClick={handleShow}>
-        Ver detalles
-      </Button>
+      <div className="botones_info">
+        <Button className="btn_contactar" onClick={handleShow}>
+          Contactar
+        </Button>
+        {props.rutaFicha !== "undefined" && !!props.rutaFicha ? (
+          <div className="pdf_ficha">
+            <img
+              src={process.env.PUBLIC_URL + "./images/iconoPDF.png"}
+              alt="icon-pdf"
+              width="25px"
+            />
+            <a href={props.rutaFicha} download={props.fichaNombre}>
+              {"Ficha"}
+            </a>
+          </div>
+        ) : (
+          <div className="pdf_ficha widt90">
+            <img
+              src={process.env.PUBLIC_URL + "./images/iconoPDF.png"}
+              alt="icon-pdf"
+              width="25px"
+            />
+            <div>
+              {"Sin Ficha"}
+            </div>
+          </div>
+        )}
+      </div>
 
       <Modal
         size="xl"
@@ -61,7 +86,7 @@ function ModalProduct(props) {
               <div className="d-flex justify-content-center align-items-center flex-wrap">
                 <Image
                   className="img_modal w-100"
-                  src={`.${props.rutaImg}`}
+                  src={`${props.rutaImg}`}
                   thumbnail
                   alt={props.alt}
                 />
@@ -161,7 +186,6 @@ function ModalProduct(props) {
                   {/* <Button variant="info" type="submit">
                     Consulta directa
                   </Button> */}
-                  
                 </Form>
               </Row>
             </Col>

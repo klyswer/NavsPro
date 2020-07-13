@@ -1,10 +1,6 @@
 import React from "react";
 import {connect} from 'react-redux'
- 
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import {Card, Container, Col, Row} from "react-bootstrap";
 import './styles/galery.css';
 
 // Objetos JSON
@@ -49,15 +45,17 @@ function Galery({ lista, titleGalery}) {
                       rutaImg = {item.rutaImg}
                       info = {item.info}
                       alt = {item.alt}
-                      precio = {item.precio}
+                      precio = {Math.round(item.precio*1.19)}
                       formato = {item.formato}
                       medida ={item.medida}
+                      rutaFicha = {process.env.PUBLIC_URL + item.ficha}
+                      fichaNombre = {item.title}
                     />
                   </Card.Body>
                   <Card.Footer>
                     <div className="d-flex justify-content-center align-items-center">
-                      <div className="circle_item active_item"></div>
-                      <span className="precio_color">$ {item.precio} </span>
+                      <div className="circle_item active_item" />
+                      <span className="precio_color">$ {Math.round(item.precio*1.19)} </span>
                     </div>
                   </Card.Footer>
                   {/* <Button variant="outline-warning">Cotizar</Button> */}

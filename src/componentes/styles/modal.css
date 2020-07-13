@@ -1,38 +1,79 @@
-.img_modal{
-    border: outset 5px #152872 !important;
-    border-radius: 5% !important;
+.img_modal {
+  border: outset 5px #152872 !important;
+  border-radius: 5% !important;
 }
-.header_bg{
-    background: #000040;
-    
+.header_bg {
+  background: #000040;
 }
-
-.button_send{
-    background: #000040 !important;
-    border: none !important;
+.botones_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
-.button_send:hover{
-    background: #000074 !important;
-    border: none !important;
+.btn_contactar {
+  background-color: #1c17b8 !important;
+  border: none !important;
 }
-
-.title_modal{
-    color: white;
-    font-weight: 700 !important;
-    margin-left: 1rem;
+.btn_contactar:hover {
+  background-color: hsla(242, 71%, 36%, 0.9) !important;
 }
 
-.close span{
-    color: white;
+.pdf_ficha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  margin: 10px;
+}
+.pdf_ficha a,
+.pdf_ficha div {
+  color: rgb(209, 69, 69);
+  font-weight: 600;
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  transition-delay: 0.1s;
+}
+.widt90 {
+  width: 90px;
+}
+.pdf_ficha a:hover {
+  color: rgb(250, 4, 4);
+  /* font-size: 17px; */
+
+  text-decoration: none;
+}
+.pdf_ficha div:hover {
+    cursor: not-allowed;
 }
 
-.format_style{
-    border: 1px #000074 solid;
-    border-radius: 20px;
-    width: 100%;
-    text-align: center;
-    padding: 4px 8px;
-    color: #018599;
-    font-weight: 700;
-    font-size: 18px;
+.button_send {
+  background: #000040 !important;
+  border: none !important;
+}
+.button_send:hover {
+  background: #000074 !important;
+  border: none !important;
+}
+
+.title_modal {
+  color: white;
+  font-weight: 700 !important;
+  margin-left: 1rem;
+}
+
+.close span {
+  color: white;
+}
+
+.format_style {
+  border: 1px #000074 solid;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 4px 8px;
+  color: #018599;
+  font-weight: 700;
+  font-size: 18px;
 }

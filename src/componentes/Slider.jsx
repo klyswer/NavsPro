@@ -20,7 +20,7 @@ function Slider(props) {
         <img
           className="d-block w-100 img_s"
           // src="../images/capsulas.jpg"
-          src="https://cdn.pixabay.com/photo/2020/03/15/18/36/hands-4934590_960_720.jpg"
+          src="https://cdn.pixabay.com/photo/2017/05/23/16/23/soap-dispenser-2337697_960_720.jpg"
           
           alt="0 slide"
         />
