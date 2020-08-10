@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { useFirebaseApp } from "reactfire";
+// import { useFirebaseApp } from "reactfire";
 
 //COMPONENTS
 import Header from "./componentes/Header.jsx";
@@ -9,10 +9,8 @@ import Footer from "./componentes/Footer.jsx";
 import Galery from "./componentes/Galery.jsx";
 
 // OBJETO DE DATOS
-
 const Textos = {
   titles: {
-    //Aquí controlaremos todos los titulos que va a llevar el slider o carousel.
     title1: "Bienvenidos a Mpr&r",
     title2: "Materias primas de calidad",
     title3: "Lava constantemente tus manos",
@@ -28,8 +26,8 @@ const Textos = {
 };
 
 function App() {
-  const firebase = useFirebaseApp();
-  console.log(firebase);
+  // const firebase = useFirebaseApp();
+  // console.log(firebase);
   return (
     <div className="App">
       <Header title="Mp-R&R" id="1" />
