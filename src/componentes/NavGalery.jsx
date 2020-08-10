@@ -12,15 +12,9 @@ const NavGalery = ({filtrarProducts, mostrarProduc }) => {
     switch (eventKey) {
       case "all":
         return mostrarProduc();
-        // break;
-
       default:
         return filtrarProducts(eventKey);
     }
-    // console.log(`Clickaste ${eventKey}`)
-
-    
-
   }
 
   return (
@@ -30,32 +24,23 @@ const NavGalery = ({filtrarProducts, mostrarProduc }) => {
           justify
           variant="pills"
           className="bar_navs"
-          // activeKey="btn-1"
-          defaultActiveKey="#Todos"
-          // defaultActiveKey="/home"
+          defaultActiveKey="all"
           onSelect={handleSelect}
-         
         >
           <Nav.Item>
-            <Nav.Link className="link_style" href="#Todos" eventKey="all" cat="all">
+            <Nav.Link className="link_style" eventKey="all" cat="all">
               Todas
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link className="link_style" href="#MateriasPrimas" eventKey="Mp">
+            <Nav.Link className="link_style"  eventKey="Mp">
               Materias
             </Nav.Link>
           </Nav.Item>
 
-          {/* <Nav.Item>
-            <Nav.Link className="link_style" href="#Bidones" eventKey="bid" cat="bid">
-              Bidones
-            </Nav.Link>
-          </Nav.Item> */}
-
           <Nav.Item>
-            <Nav.Link className="link_style" href="#Esencias" eventKey="Es" cat="Es">
+            <Nav.Link className="link_style" eventKey="Es" cat="Es">
               Esencias
             </Nav.Link>
           </Nav.Item>
@@ -65,7 +50,6 @@ const NavGalery = ({filtrarProducts, mostrarProduc }) => {
   );
 }
 
-// actions para guardar opciones de tablas.
 const mapStateToProps = state => ({
   lista: state.listProduct
 })

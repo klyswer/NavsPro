@@ -43,7 +43,7 @@ function Galery({ lista, titleGalery}) {
                       id = {item.id}
                       title = {item.title}
                       rutaImg = {item.rutaImg}
-                      info = {item.info}
+                      info = {item.descript}
                       alt = {item.alt}
                       precio = {Math.round(item.precio*1.19)}
                       formato = {item.formato}
@@ -70,7 +70,7 @@ function Galery({ lista, titleGalery}) {
 }
 
 const mapStateToProps = state =>({
-    lista: state.listProduct
+    lista: state.reducerProduct.listProduct
 })
 
 const mapDispatchToProps = ()=> ({})

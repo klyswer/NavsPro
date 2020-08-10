@@ -1,8 +1,24 @@
 import React, { useState } from "react";
 import { Modal, Button, Col, Row, Image, Form } from "react-bootstrap";
+// import ButtonSend from './common/ButtonSend'
 import "./styles/modal.css";
+import {
+  esEmailValido,
+  validarNumero,
+} from "../utils/FormatUtil";
 
-function ModalProduct(props) {
+const ModalProduct = ({
+  id,
+  title,
+  rutaImg,
+  info,
+  alt,
+  precio,
+  formato,
+  medida,
+  rutaFicha,
+  fichaNombre,
+}) => {
   const [show, setShow] = useState(false);
   const [data, setData] = useState({
     username: "",
@@ -10,38 +26,158 @@ function ModalProduct(props) {
     address: "",
     phone: "",
     message: "",
+    terminos: false,
   });
+  const [error, setError] = useState({
+    validateErrorEmail: '',
+    validateErrorPhone: '',
+    msgErrorEmail: "",
+    msgErrorPhone: "",
+    btn_disabled: true,
+  });
+
+
+  // useEffect(() => {
+  //   const event = ()=>{
+  //       if(error.validateErrorEmail === true || error.validateErrorPhone === true){
+  //       console.log("existe un error btn deshabilitado")
+  //       setError({
+  //         btn_disabled: true
+  //       });
+  //     }
+  //     console.log('Habilita el btn')
+  //     setError({
+  //       btn_disabled: false
+  //     });
+  //   }
+   
+  //   return () => clearImmediate(event)
+    
+  // }, [error.validateErrorEmail,error.validateErrorPhone]);
+
+
+  // const habilitaBtn = ()=>{
+  //   if(error.validateErrorEmail === true || error.validateErrorPhone === true){
+  //     console.log("existe un error btn deshabilitado")
+  //     setError({
+  //       btn_disabled: true
+  //     });
+  //   }  
+  //   setError({
+  //     btn_disabled: false
+  //   });
+  // }
+
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleInputChange = (event) => {
+
+
+  const handleInputChange = ({ name, value, checked, type }) => {
     setData({
       ...data,
-      [event.target.name]: event.target.value,
+      [name]: type === "checkbox" ? checked : value,
     });
-    // console.log(event.target.value);
+   
+    if (name === "email") {
+      if (value === "" || !esEmailValido(value)) {
+        setError({
+          ...error,
+          validateErrorEmail: true,
+          msgErrorEmail: "Debe introducir un email valido para comunicarnos con usted.",
+          btn_disabled: true,
+        });
+      } else {
+        console.log("estoy seteando esto mal")
+        setError({
+          ...error,
+          validateErrorEmail: false,
+          msgErrorEmail: "",
+          btn_disabled: false,
+        });
+      }
+    } else if (name === "phone") {
+      if (value === "" || !validarNumero(value) || value.length < 9) {
+        setError({
+          ...error,
+          validateErrorPhone: true,
+          msgErrorPhone: "Recuerde introducir un número de teléfono valido, mínimo 9 digitos.",
+          btn_disabled: true,
+        });
+      } else {
+        setError({
+          ...error,
+          validateErrorPhone: false,
+          msgErrorPhone: "",
+          btn_disabled: false,
+        });
+      }
+    }
+    console.log(`Correo: ${error.validateErrorEmail}`)
+    console.log(`Phone: ${error.validateErrorPhone}`)
   };
+
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(data.username + " - " + data.email);
+    
+
+    if( error.validateErrorEmail !== '' && error.validateErrorEmail === false && error.validateErrorPhone !== '' && error.validateErrorPhone === false) {
+      const url = "https://mpryrback.herokuapp.com/api/mails";
+      const headersRequest = {
+        "Content-Type": "application/json",
+      };
+      const datos = JSON.stringify({
+        product: "5f217a1fd30f9d0f21024ec9",
+        username: data.username,
+        email: data.email,
+        address: data.address,
+        phone: data.phone,
+        message: data.message,
+      });
+      const miInit = {
+        method: "post",
+        headers: headersRequest,
+        body: datos,
+      };
+      fetch(url, miInit)
+        .then((response) => {
+          return response.json();
+        })
+        .then(() => {
+          alert("Gracias por escribirnos, le responderemos a la brevedad posible.");
+      handleClose();
+        })
+        .catch(() => {
+          console.log("Por favor, intente más tarde.");
+        });
+      
+    }else{
+      if(error.validateErrorPhone === ''){
+        alert("Por favor, introduzca un número telefónico valido.")
+      }else{
+        alert("Por favor, introduzca un Correo Electrónico valido.")
+      }
+    }
   };
 
   return (
     <>
       <div className="botones_info">
         <Button className="btn_contactar" onClick={handleShow}>
-          Contactar
+          Consultar
         </Button>
-        {props.rutaFicha !== "undefined" && !!props.rutaFicha ? (
+        {rutaFicha !== "undefined" && !!rutaFicha ? (
           <div className="pdf_ficha">
             <img
               src={process.env.PUBLIC_URL + "./images/iconoPDF.png"}
               alt="icon-pdf"
               width="25px"
             />
-            <a href={props.rutaFicha} download={props.fichaNombre}>
+            <a href={rutaFicha} download={fichaNombre}>
               {"Ficha"}
             </a>
           </div>
@@ -52,9 +188,7 @@ function ModalProduct(props) {
               alt="icon-pdf"
               width="25px"
             />
-            <div>
-              {"Sin Ficha"}
-            </div>
+            <div>{"Sin Ficha"}</div>
           </div>
         )}
       </div>
@@ -71,7 +205,7 @@ function ModalProduct(props) {
             className="title_modal"
             id="example-custom-modal-styling-title"
           >
-            {props.title + " " + props.id}
+            {title + " " + id}
           </Modal.Title>
         </Modal.Header>
 
@@ -86,22 +220,22 @@ function ModalProduct(props) {
               <div className="d-flex justify-content-center align-items-center flex-wrap">
                 <Image
                   className="img_modal w-100"
-                  src={`${props.rutaImg}`}
+                  src={`${rutaImg}`}
                   thumbnail
-                  alt={props.alt}
+                  alt={alt}
                 />
 
                 <div className="format_style mt-2">
                   En formato:
-                  {props.formato.length > 1
-                    ? ` [ ${props.formato[0]}, ${props.formato[1]}, ${props.formato[2]} ] ${props.medida}`
-                    : ` ${props.formato}${props.medida}`}
+                  {formato.length > 1
+                    ? ` [ ${formato[0]}, ${formato[1]}, ${formato[2]} ] ${medida}`
+                    : ` ${formato}${medida}`}
                 </div>
               </div>
 
               <div className="d-flex justify-content-center align-items-center mt-3">
                 <div className="circle_item active_item"></div>
-                <div className="precio_color">$ {props.precio} </div>
+                <div className="precio_color">$ {precio} </div>
               </div>
             </Col>
 
@@ -111,11 +245,12 @@ function ModalProduct(props) {
               xs={11}
               sm={8}
             >
-              <Row className="w-100">
-                <p className="mt-5 mb-3 text-justify">{props.info}</p>
+              <Row className="w-100 productFlex">
+                <div className="mt-2 productName">Producto: <span>{title}</span></div>
+                <p className="mt-2 mb-3 text-justify productDescription">Descripción: <span>{info}</span></p>
               </Row>
               <Row className="w-100">
-                <Form className="w-100" onSubmit={handleSubmit}>
+                <Form className="w-100">
                   <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
                       <Form.Label>Nombre</Form.Label>
@@ -124,19 +259,24 @@ function ModalProduct(props) {
                         type="text"
                         placeholder="Introduzca su nombre y apellido"
                         title="Por favor, introduzca su nombre y apellido."
-                        onChange={handleInputChange}
+                        onChange={(event) => handleInputChange(event.target)}
                       />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
-                      <Form.Label>Correo </Form.Label>
+                      <Form.Label>Correo</Form.Label>
                       <Form.Control
                         name="email"
                         type="email"
                         placeholder="Correo electrónico."
                         title="Por favor, introduzca su correo electrónico."
-                        onChange={handleInputChange}
+                        onChange={(event) => handleInputChange(event.target)}
                       />
+                      {error.validateErrorEmail && (
+                        <div className="errorFormInput">
+                          {error.msgErrorEmail}
+                        </div>
+                      )}
                     </Form.Group>
                   </Form.Row>
 
@@ -148,7 +288,7 @@ function ModalProduct(props) {
                         type="text"
                         placeholder="¿Cuál es su dirección?"
                         title="Estimado ¿donde se encuentra ubicado?"
-                        onChange={handleInputChange}
+                        onChange={(event) => handleInputChange(event.target)}
                       />
                     </Form.Group>
 
@@ -157,10 +297,16 @@ function ModalProduct(props) {
                       <Form.Control
                         name="phone"
                         type="text"
-                        placeholder="Ejemplo: +56 9 7744 9343"
+                        maxLength="12"
+                        placeholder="+56977449343"
                         title="Indiquenos su número para ponernos en contacto."
-                        onChange={handleInputChange}
+                        onChange={(event) => handleInputChange(event.target)}
                       />
+                      {error.validateErrorPhone && (
+                        <div className="errorFormInput">
+                          {error.msgErrorPhone}
+                        </div>
+                      )}
                     </Form.Group>
                   </Form.Row>
 
@@ -169,23 +315,24 @@ function ModalProduct(props) {
                     <Form.Control
                       name="message"
                       as="textarea"
+                      className="campo_comentario"
                       rows="3"
-                      placeholder="¿Puede indicarnos su consulta?"
+                      placeholder="Este mensaje llegara directo a nuestros vendedores quienes lo contactaran a la brevedad posible. Gracias por preferir Mpr&r."
                       title="Cotice directamente por este campo."
-                      onChange={handleInputChange}
+                      onChange={(event) => handleInputChange(event.target)}
+                      resize="none"
                     />
                   </Form.Group>
 
                   <Form.Group className="float-right" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Acepto terminos." />
+                    <Form.Check
+                      type="checkbox"
+                      checked={data.terminos}
+                      name="terminos"
+                      label="Acepto terminos."
+                      onChange={(event) => handleInputChange(event.target)}
+                    />
                   </Form.Group>
-
-                  {/* <h3>{data.username + ' - ' + data.email + ' - ' + data.address + ' - ' + data.phone}</h3>
-                  <h2>{data.message}</h2> */}
-
-                  {/* <Button variant="info" type="submit">
-                    Consulta directa
-                  </Button> */}
                 </Form>
               </Row>
             </Col>
@@ -193,16 +340,20 @@ function ModalProduct(props) {
         </Modal.Body>
 
         <Modal.Footer>
-          {/* <Button variant="outline-danger" onClick={handleClose}>
-            Cerrar
-          </Button> */}
-          <Button className="button_send" size="lg" onClick="" type="submit">
+          <Button
+            className="button_send"
+            size="lg"
+            type="submit"
+            onClick={handleSubmit}
+            disabled={error.btn_disabled && !data.terminos}
+          >
             Consulta directa
           </Button>
+          {/* <ButtonSend /> */}
         </Modal.Footer>
       </Modal>
     </>
   );
-}
+};
 
 export default ModalProduct;

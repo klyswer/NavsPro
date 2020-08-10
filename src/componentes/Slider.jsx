@@ -19,9 +19,7 @@ function Slider(props) {
       <Carousel.Item>
         <img
           className="d-block w-100 img_s"
-          // src="../images/capsulas.jpg"
           src="https://cdn.pixabay.com/photo/2017/05/23/16/23/soap-dispenser-2337697_960_720.jpg"
-          
           alt="0 slide"
         />
 
@@ -29,9 +27,6 @@ function Slider(props) {
           <h3 className="title_slider">
             <span>{props.titleImg3}</span>
           </h3>
-          {/* <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -46,7 +41,6 @@ function Slider(props) {
           <h3 className="title_slider">
             <span>{props.titleImg1}</span>
           </h3>
-          {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -54,8 +48,6 @@ function Slider(props) {
         <img
           className="d-block w-100 img_s"
           src="https://cdn.pixabay.com/photo/2017/05/23/16/23/soap-dispenser-2337697_960_720.jpg"
-          // src="./images/Empresa.jpg"
-          // src="https://asd-law.com/app/uploads/2018/04/Dresden_iStock-931497600_cropped-1440x500.jpg"
           alt="Second slide"
         />
 
@@ -63,7 +55,6 @@ function Slider(props) {
           <h3 className="title_slider img_s">
             <span>{props.titleImg2}</span>
           </h3>
-          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -78,9 +69,6 @@ function Slider(props) {
           <h3 className="title_slider">
             <span>{props.titleImg3}</span>
           </h3>
-          {/* <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
