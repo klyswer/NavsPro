@@ -1,5 +1,5 @@
 .img_modal {
-  border: outset 5px #152872 !important;
+  /* border: outset 5px #152872 !important; */
   border-radius: 5% !important;
 }
 .header_bg {
@@ -15,8 +15,14 @@
   background-color: #1c17b8 !important;
   border: none !important;
 }
-.btn_contactar:hover {
+.btn_contactar:hover, .btn_contactar:focus {
   background-color: hsla(242, 71%, 36%, 0.9) !important;
+  outline: none !important;
+  box-shadow: none;
+  
+}
+.btn:focus{
+  box-shadow: none !important;
 }
 
 .pdf_ficha {
@@ -68,12 +74,78 @@
 }
 
 .format_style {
-  border: 1px #000074 solid;
-  border-radius: 20px;
+  border: 1px #00007442 solid;
+  border-radius: 5px;
   width: 100%;
   text-align: center;
   padding: 4px 8px;
-  color: #018599;
-  font-weight: 700;
-  font-size: 18px;
+  color: #108fff;
+  font-weight: 600;
+  font-size: 16px;
 }
+
+.errorFormInput{
+  line-height: 12px;
+  font-size: 12px;
+  color: #f74040;
+  width: 100%;
+  text-align: start;
+  padding: 2px 13px;
+}
+
+label{
+  font-size: 12px;
+  color: #8d8d8d;
+}
+
+label:hover, label:focus, label:active{
+  color: #068de7;
+  cursor: pointer;
+}
+
+.form-control{
+  line-height: 1.2 !important;
+  border-radius: 2px !important;
+}
+
+.form-control:focus {
+  color: #0159b1 !important;
+  background-color: #fff;
+  border-color: #bcc4e1;
+  box-shadow: 0 0 0 0.1rem #2388ee6b !important;
+}
+
+textarea.campo_comentario{
+  resize: none !important;
+  height: 60px !important;
+}
+
+input[type='email'],input[type='text'],textarea.campo_comentario{
+  font-size: 13px;
+  font-weight: 600;
+  color: #757575;
+}
+
+input[type='email']::placeholder,input[type='text']::placeholder,textarea::placeholder {
+  color: rgb(185, 185, 185) !important;
+  font-size: 12px;
+}
+.productFlex{
+  display: flex;
+  flex-flow: column wrap;
+}
+.productName{
+  font-size: 20px;
+  font-weight: 600;
+  color:#8d8d8d;
+}
+
+.productDescription{
+  color:#8d8d8d;
+  font-size: 12px;
+}
+.productName span{
+  color: rgba(172, 255, 47, 0.575);
+}
+
+

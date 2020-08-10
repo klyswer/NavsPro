@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .Bg_titleGalery {
@@ -53,6 +54,23 @@
   border-radius: 100px;
   margin-right: 5px;
 }
+.card{
+  box-shadow: 3px 4px 15px 0px #aaaaaab4 !important;
+  border: none !important;
+  width: 100%;
+  transition: width 0.2s;
+}
+.card:hover{
+  box-shadow: 3px 4px 15px 0px #aaaaaaf1 !important;
+  width: 101%;
+}
+.card-title{
+  overflow: hidden;
+  font-size: 17px !important;
+}
+.card-body{
+  padding: 0rem 0.6rem !important;
+}
 
 .active_item {
   background: #66f115;
@@ -69,9 +87,9 @@
 /* Precios */
 
 .precio_color {
-  color: #018599;
-  font-weight: bold;
-  font-size: 1.3em;
+  color: #027586;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 /* ______________________________Media queries________________________________ */
