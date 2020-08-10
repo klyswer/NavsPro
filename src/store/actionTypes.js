@@ -1,0 +1,3 @@
+export const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS"
+export const MOSTRAR_TODO = "MOSTRAR_TODO"
+export const FILTRAR_LISTA = "FILTRAR_LISTA"
