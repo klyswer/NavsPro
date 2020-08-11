@@ -79,7 +79,8 @@
   width: 100%;
   text-align: center;
   padding: 4px 8px;
-  color: #108fff;
+  /* color: #108fff; */
+  color: #046b7a;
   font-weight: 600;
   font-size: 16px;
 }
@@ -147,5 +148,24 @@ input[type='email']::placeholder,input[type='text']::placeholder,textarea::place
 .productName span{
   color: rgba(172, 255, 47, 0.575);
 }
+
+.list_prices ul{
+  padding: 0;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 500;
+}
+.list_prices ul li{
+  color: #51db01;
+  list-style: none;
+}
+.list_prices ul li span{
+  color: #027586;
+}
+.m_auto_b{
+  margin-bottom: auto;
+}
+
+
 
 

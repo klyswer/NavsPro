@@ -6,9 +6,11 @@ import {
   esEmailValido,
   validarNumero,
 } from "../utils/FormatUtil";
+import ListPrices from "./common/ListPrices";
 
 const ModalProduct = ({
   id,
+  _id,
   title,
   rutaImg,
   info,
@@ -35,39 +37,6 @@ const ModalProduct = ({
     msgErrorPhone: "",
     btn_disabled: true,
   });
-
-
-  // useEffect(() => {
-  //   const event = ()=>{
-  //       if(error.validateErrorEmail === true || error.validateErrorPhone === true){
-  //       console.log("existe un error btn deshabilitado")
-  //       setError({
-  //         btn_disabled: true
-  //       });
-  //     }
-  //     console.log('Habilita el btn')
-  //     setError({
-  //       btn_disabled: false
-  //     });
-  //   }
-   
-  //   return () => clearImmediate(event)
-    
-  // }, [error.validateErrorEmail,error.validateErrorPhone]);
-
-
-  // const habilitaBtn = ()=>{
-  //   if(error.validateErrorEmail === true || error.validateErrorPhone === true){
-  //     console.log("existe un error btn deshabilitado")
-  //     setError({
-  //       btn_disabled: true
-  //     });
-  //   }  
-  //   setError({
-  //     btn_disabled: false
-  //   });
-  // }
-
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -131,7 +100,7 @@ const ModalProduct = ({
         "Content-Type": "application/json",
       };
       const datos = JSON.stringify({
-        product: "5f217a1fd30f9d0f21024ec9",
+        product: _id,
         username: data.username,
         email: data.email,
         address: data.address,
@@ -226,10 +195,11 @@ const ModalProduct = ({
                 />
 
                 <div className="format_style mt-2">
-                  En formato:
-                  {formato.length > 1
-                    ? ` [ ${formato[0]}, ${formato[1]}, ${formato[2]} ] ${medida}`
-                    : ` ${formato}${medida}`}
+                  {
+                    formato.length > 1
+                    ? <ListPrices listaPrecios={formato} />
+                    : `En formato: ${formato}${medida}`
+                  }
                 </div>
               </div>
 
@@ -241,7 +211,7 @@ const ModalProduct = ({
 
             <Col
               id="text_modal"
-              className="d-flex justify-content-center align-items-center flex-wrap m-auto"
+              className="d-flex justify-content-center align-items-center flex-wrap m_auto_b"
               xs={11}
               sm={8}
             >
@@ -317,7 +287,7 @@ const ModalProduct = ({
                       as="textarea"
                       className="campo_comentario"
                       rows="3"
-                      placeholder="Este mensaje llegara directo a nuestros vendedores quienes lo contactaran a la brevedad posible. Gracias por preferir Mpr&r."
+                      placeholder="Este mensaje llegara directo a nuestros expertos en materias primas."
                       title="Cotice directamente por este campo."
                       onChange={(event) => handleInputChange(event.target)}
                       resize="none"

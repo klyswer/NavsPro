@@ -95,9 +95,9 @@
 /* ______________________________Media queries________________________________ */
 
 @media (max-width: 575.98px) {
-  .active_item {
+  /* .active_item {
     background: tomato;
-  }
+  } */
   /* Title Galery */
   .Bg_titleGalery {
     height: 100%;
@@ -109,9 +109,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .active_item {
+  /* .active_item {
     background: forestgreen;
-  }
+  } */
   /* Title Galery */
   .Bg_titleGalery {
     height: 100%;
@@ -123,9 +123,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .active_item {
+  /* .active_item {
     background: rgb(255, 2, 213);
-  }
+  } */
   /* Title Galery */
   .Bg_titleGalery {
     height: 100%;
@@ -137,9 +137,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .active_item {
+  /* .active_item {
     background: rgb(253, 118, 0);
-  }
+  } */
 }
 
 @media (min-width: 1200px) {

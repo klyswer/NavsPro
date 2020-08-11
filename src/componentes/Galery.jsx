@@ -41,6 +41,7 @@ function Galery({ lista, titleGalery}) {
 
                     <ModalProduct //Boton de Ver detalle
                       id = {item.id}
+                      _id={item._id}
                       title = {item.title}
                       rutaImg = {item.rutaImg}
                       info = {item.descript}
