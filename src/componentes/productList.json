@@ -1,35 +1,35 @@
 [
   {
-    "id": "1000",
+    "id": "5245",
     "title": "Lavanda Emsa",
     "precio": 16350,
-    "formato": [1, 10, 25],
+    "formato": [19581, 39038, 98306],
     "medida": "Lt",
     "cantidad": "100",
     "rutaImg": "./images/emsaVainilla.jpg",
     "alt": "Esencia Lavanda Detergente",
     "cat": "Es",
     "ficha": "./fichas/lavandaEcoEmsa.pdf",
-    "descript": "Esencia de Lavanda de gran potencia para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor floral, notas menta y eucalipto."
   },
   {
-    "id": "1001",
+    "id": "5226",
     "title": "Arys Power Emsa",
     "precio": 17710,
-    "formato": [1, 10, 25],
+    "formato": [21199, 42275, 106398],
     "medida": "litro",
     "cantidad": "100",
     "rutaImg": "./images/emsaVainilla.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/arysPowerEmsa.pdf",
-    "descript": "Esencia aroma a  de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor frutal y floral."
   },
   {
     "id": "1002",
     "title": "Primavera Eco Emsa",
     "precio": 11500,
-    "formato": [1, 10, 25],
+    "formato": [13685, 27370, 68425],
     "medida": "litro",
     "cantidad": "100",
     "rutaImg": "./images/emsaVainilla.jpg",
@@ -39,160 +39,277 @@
     "descript": "Esencia aroma a  de gran calidad para productos dirigidos a la ropa."
   },
   {
-    "id": "1003",
+    "id": "5210",
     "title": "Soft Clásico Emsa",
     "precio": 13195,
-    "formato": [1, 10, 25],
+    "formato": [15826, 31529, 79533],
     "medida": "litro",
     "cantidad": "100",
     "rutaImg": "./images/emsaVainilla.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/softClasicoEmsa.pdf",
-    "descript": "Esencia aroma a  de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor floral, fresco aldehidico."
   },
   {
-    "id": "1004",
+    "id": "5241",
     "title": "Bosque de Bambu Emsa",
     "precio": 22550,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [26959, 53794, 135196],
     "cantidad": "100",
     "rutaImg": "./images/emsaVainilla.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/bambuEmsa.pdf",
-    "descript": "Esencia Omo de gran concentración para detergentes de ropa."
+    "descript": "Liquido aceitoso con intenso olor frutal y verde (melón ,pepino, bambú)."
   },
   {
-    "id": "2000",
+    "id": "5228",
+    "title": "Driver perfect Emsa",
+    "precio": 17151,
+    "medida": "litro",
+    "formato": [20534, 40944, 103071],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con un intenso olor frutal, floral, acuoso verde."
+  },
+  {
+    "id": "5208",
+    "title": "Driver clásico Emsa",
+    "precio": 18354,
+    "medida": "litro",
+    "formato": [21965, 43808, 110229],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor cítrico, frutal y amaderado."
+  },
+  {
+    "id": "5222",
+    "title": "Omo deter Emsa",
+    "precio": 18745,
+    "medida": "litro",
+    "formato": [22431, 44738, 112556],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor floral, fresco y aldehidico."
+  },
+  {
+    "id": "5223",
+    "title": "Omo clásico Emsa",
+    "precio": 18277,
+    "medida": "litro",
+    "formato": [21874, 43624, 109771],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor fresco, floral afrutado."
+  },
+  {
+    "id": "5215",
+    "title": "Limón Emsa",
+    "precio": 13665,
+    "medida": "litro",
+    "formato": [16385, 32648, 82330],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor frutal (nota de cascara de limón)."
+  },
+  {
+    "id": "5219",
+    "title": "Pasión de tropico Emsa",
+    "precio": 22963,
+    "medida": "litro",
+    "formato": [27450, 54777, 137653],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor floral-Frutal."
+  },
+  {
+    "id": "5213",
+    "title": "Vainilla Emsa",
+    "precio": 18354,
+    "medida": "litro",
+    "formato": [21965, 43808, 110229],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor floral con notas mantequilla y madera."
+  },
+  {
+    "id": "5246",
+    "title": "Pino Emsa",
+    "precio": 14190,
+    "medida": "litro",
+    "formato": [17010, 33897, 85454],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor fresco (notas de hojas de pino)."
+  },
+  {
+    "id": "5234",
+    "title": "Blue Emsa",
+    "precio": 14190,
+    "medida": "litro",
+    "formato": [17010, 33897, 85454],
+    "cantidad": "100",
+    "rutaImg": "./images/emsaVainilla.jpg",
+    "alt": "Alt de imagen",
+    "cat": "Es",
+    "ficha": "",
+    "descript": "Liquido aceitoso con intenso olor frutal, floral  acuoso verde."
+  },
+  {
+    "id": "5222",
     "title": "Deter clean Cramer",
     "precio": 12305,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [14767, 29411, 74238],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/deterCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor floral, fresco, aldehidico."
   },
   {
-    "id": "2001",
+    "id": "5228",
     "title": "Perfect Fiber Cramer",
     "precio": 10640,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [12786, 25448, 64331],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/perfectFiberCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con un intenso olor frutal, floral  acuoso verde."
   },
   {
-    "id": "2002",
+    "id": "5245",
     "title": "Lavanda Esp Cramer",
     "precio": 10927,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [13127, 26131, 66039],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/lavandaEspCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor floral, notas menta y eucalipto."
   },
   {
-    "id": "2003",
+    "id": "5227",
     "title": "Primavera Esp Cramer",
     "precio": 11056,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [13281, 26438, 66806],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/primaveraEspCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor floral (rosas y jazmín)  ."
   },
   {
-    "id": "2004",
+    "id": "5243",
     "title": "Aloe Clean Cramer",
     "precio": 11017,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [13234, 26345, 66574],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/aloeCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor fresco, floral, afrutado (notas hojas de aloe vera)."
   },
   {
-    "id": "2005",
+    "id": "5207",
     "title": "Coco miel Cramer",
     "precio": 11994,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [14397, 28671, 72387],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/cocoCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor gourmet (miel con toque de coco) ."
   },
   {
-    "id": "2006",
+    "id": "5202",
     "title": "Arandano Clean Cramer",
     "precio": 12733,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [15276, 30430, 76784],
     "cantidad": "100",
     "rutaImg": "./images/cramerLavanda.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/arandanoCramer.pdf",
-    "descript": "Esencia aroma a vainilla de gran calidad para productos dirigidos a la ropa."
+    "descript": "Liquido aceitoso con intenso olor frutal fantasía."
   },
   {
-    "id": "3000",
+    "id": "5201",
     "title": "Lavanda Poet Lucta",
     "precio": 14996,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [17969, 35815, 90249],
     "cantidad": "100",
     "rutaImg": "./images/lucta.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "./fichas/lavandaPoetJofram.pdf",
-    "descript": "Esencia Omo de gran concentración para detergentes de ropa."
+    "descript": "Liquido aceitoso con intenso olor floral, notas menta y eucalipto."
   },
   {
-    "id": "4000",
+    "id": "5203",
     "title": "Arys Holchem",
     "precio": 10131,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [12180, 24237, 61302],
     "cantidad": "100",
     "rutaImg": "./images/BidonBlanco.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "",
-    "descript": "Esencia Omo de gran concentración para detergentes de ropa."
+    "descript": "Liquido aceitoso con un intenso olor frutal, floral  acuoso verde."
   },
   {
-    "id": "6000",
+    "id": "5218",
     "title": "Omo B",
     "precio": 8403,
     "medida": "litro",
-    "formato": [1, 10, 25],
+    "formato": [10124, 20124, 51021],
     "cantidad": "100",
     "rutaImg": "./images/BidonBlanco.jpg",
     "alt": "Alt de imagen",
     "cat": "Es",
     "ficha": "",
-    "descript": "Esencia Omo de gran concentración para detergentes de ropa."
+    "descript": "Liquido aceitoso con intenso olor fresco, floral afrutado."
   },
   {
     "id": "5001",
@@ -217,7 +334,7 @@
     "alt": "Ácido Sulfónico",
     "cat": "Mp",
     "ficha": "./fichas/acidoDode.pdf",
-    "descript": "Ácido especial para detergente ropa. (pendiente)"
+    "descript": "Tensoactivo responsable de llevar a cabo la función primordial de los detergentes, quitar la suciedad de la ropa y mantenerla en solución para desecharla en el enjuague."
   },
   {
     "id": "5005",
@@ -229,7 +346,7 @@
     "rutaImg": "./images/sacoCmc.jpg",
     "alt": "Anilina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Solido cristalino (como la arena) con la capacidad de darle un color especifico al producto el cual se esta generando."
   },
   {
     "id": "5006",
@@ -241,7 +358,7 @@
     "rutaImg": "./images/BidonBlanco.jpg",
     "alt": "Anilina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Aditivo químico que reduce y dificulta la formación de espuma en procesos industriales líquidos."
   },
   {
     "id": "5007",
@@ -253,7 +370,7 @@
     "rutaImg": "./images/Acido_F.jpg",
     "alt": "Betaína",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Detergente anfotérico que además de poseer propiedades espumantes y limpiadoras es bien tolerado por la piel."
   },
   {
     "id": "5008",
@@ -265,7 +382,7 @@
     "rutaImg": "./images/sacoCmc.jpg",
     "alt": "Blanquador óptico",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Aditivos que se utilizan a menudo en los detergentes tanto para la lavadora como para lavar a mano que permiten “reavivar” el blanco de la ropa."
   },
   {
     "id": "5009",
@@ -277,7 +394,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Butil Glicol",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Liquido incoloro, Algo viscoso soluble en agua en casi todas las proporciones, de sabor amargo higroscópico de olor característico, miscible con la mayoría de los disolventes orgánicos usuales."
   },
   {
     "id": "5010",
@@ -289,7 +406,7 @@
     "rutaImg": "./images/EDTA.jpg",
     "alt": "edta",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Coadyuvante en detergentes líquidos, con el fin de controlar la dureza del agua, debido a sus características que le permiten la quelación de iones Ca2+ y Mg2+."
   },
   {
     "id": "5011",
@@ -301,7 +418,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Flexonil rojo",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Consulte para mayor información."
   },
   {
     "id": "5012",
@@ -313,7 +430,7 @@
     "rutaImg": "./images/Formalina_25.jpg",
     "alt": "Formalina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Químico muy inflamable. En circunstancias normales de presión y temperatura es un fluido incoloro, de un olor penetrante, muy soluble en líquidos. Que permite la preservación de este."
   },
   {
     "id": "5014",
@@ -325,7 +442,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Hipoclorito de sodio.",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Compuesto liquido que puede ser utilizado para desinfección del agua. Se usa a gran escala para la purificación de superficies, blanqueamiento, eliminación de olores y desinfección del agua."
   },
   {
     "id": "5015",
@@ -337,7 +454,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Hostatint",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Pigmento inorgánico en suspensión acuosa."
   },
   {
     "id": "5016",
@@ -350,7 +467,7 @@
     "alt": "Lauryl Ether",
     "cat": "Mp",
     "ficha": "./fichas/lauryl70.pdf",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Económico y muy efectivo agente formador de espuma encontrado en numerosos productos del cuidado personal, de característica viscosa y muy sensible a la temperatura ambiente."
   },
   {
     "id": "5017",
@@ -362,7 +479,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Mowlith 530",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Dispersión acuosa copolimera vinil acrílica."
   },
   {
     "id": "5018",
@@ -374,7 +491,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Mowlith 7030",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Consulte para mayor información."
   },
   {
     "id": "5019",
@@ -386,7 +503,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Mowlith 7410",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Dispersión acrílica."
   },
   {
     "id": "5020",
@@ -398,7 +515,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Mowlith 772",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Dispersión acuosa polimérica de ésteres de los ácidos acrílico y metacrílico, libre de plastificantes."
   },
   {
     "id": "5021",
@@ -410,7 +527,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Nonil",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Líquido viscoso entre incoloro y amarillo, de olor característico. Es prácticamente insoluble en agua pero es miscible con diversos disolventes orgánicos."
   },
   {
     "id": "5022",
@@ -422,7 +539,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Oxido de amina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Producto biodegradable, que a su vez cumple una excelente característica de estabilizador de espuma, emoliente, detergente y antiestático."
   },
   {
     "id": "5023",
@@ -434,7 +551,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Papel ph indicador",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Papel utilizado para medir la concentración de Iones Hidrógenos contenido en una sustancia o disolución. Mediante la escala de pH, la cual es clasificada en distintos colores y tipos."
   },
   {
     "id": "5024",
@@ -446,7 +563,7 @@
     "rutaImg": "./images/Saco_Sal.jpg",
     "alt": "Saco de sal 25kg",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Sustancia , consistente en cloruro sódico , ordinariamente blanca , cristalina , de sabor propio , muy soluble en agua."
   },
   {
     "id": "5025",
@@ -458,7 +575,7 @@
     "rutaImg": "./images/sodaCaustica.jpg",
     "alt": "Soda caustica",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Solución incolora a ceniza claro, conteniendo en promedio un 50% de hidróxido de sodio, es usado en la industria (principalmente como una base química) en la fabricación de papel, tejidos y detergentes."
   },
   {
     "id": "5027",
@@ -471,7 +588,7 @@
     "alt": "Acido sulfónico",
     "cat": "Mp",
     "ficha": "./fichas/acidoDode.pdf",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Tenso activo responsable de llevar a cabo la función primordial de los detergentes, quitar la suciedad de la ropa y mantenerla en solución para desecharla en el enjuague."
   },
   {
     "id": "5028",
@@ -483,7 +600,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Agente perlante",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Componente nacarante y reengrasante apropiado en la elaboración de emulsiones con brillo , siendo particularmente indicado en las cremas espumantes de baño, detergentes líquidos, jabones y shampoo."
   },
   {
     "id": "5032",
@@ -495,7 +612,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Dicromato de sodio",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Sólido cristalino (como la arena), rojo o rojo-anaranjado e inodoro. Se utiliza como inhibidor de la corrosión y en la elaboración de otras sustancias químicas."
   },
   {
     "id": "5042",
@@ -507,11 +624,11 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Propilenglicol",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Compuesto orgánico (un alcohol, más precisamente un diol) incoloro, insípido e inodoro. Es un líquido aceitoso claro, higroscópico y miscible con agua, acetona, y cloroformo."
   },
   {
     "id": "5043",
-    "title": "ESPESANTE (DET. LIQ.)",
+    "title": "ESPESANTE",
     "precio": 3000,
     "medida": "Kg",
     "formato": 1,
@@ -519,7 +636,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Espesante detergente liquido",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Sal soluble en agua. utilizado para composiciones de jabones y detergentes. La cual actúa como  espesante he inhibidor de la redeposición de grasa en las telas después de que ha sido eliminada por el detergente."
   },
   {
     "id": "5044",
@@ -531,7 +648,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Alcohol Etoxilado",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Tensioactivos no iónicos resistentes a ácidos y bases, este es un componente adecuados para la emulsificación de grasas y aceites en un entorno altamente ácido o muy alcalino."
   },
   {
     "id": "5049",
@@ -543,7 +660,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Preservante",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Antimicrobiano, utilizado en formulaciones para la higiene del hogar, institucional e industrial. Es especialmente indicado para la protección de formulaciones acuosas, exento de formaldehído y solventes orgánicos."
   },
   {
     "id": "5052",
@@ -555,7 +672,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Glicerina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Líquido almibarado, importante constituyente de las grasas naturales que son esencialmente glicéridos de ácidos grasos como, por ejemplo, ácidos palmíticos, esteáricos y oleicos."
   },
   {
     "id": "5057",
@@ -567,7 +684,7 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "AOS 35",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Consulte para mayor información."
   },
   {
     "id": "5148",
@@ -579,6 +696,6 @@
     "rutaImg": "./images/Bidon20L_F.jpg",
     "alt": "Trietanolamina",
     "cat": "Mp",
-    "descript": "Especialista en accdk eodlsdñ od. (pendiente)"
+    "descript": "Líquido ligeramente amarillo, es higroscópico, volátil, de ligero olor amoniacal, totalmente soluble en agua y miscible con la mayoría de los solventes orgánicos oxigenados."
   }
 ]
