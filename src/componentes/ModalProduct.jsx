@@ -7,6 +7,7 @@ import {
   validarNumero,
 } from "../utils/FormatUtil";
 import ListPrices from "./common/ListPrices";
+import ButtonSend from "./common/ButtonSend"
 
 const ModalProduct = ({
   id,
@@ -37,6 +38,7 @@ const ModalProduct = ({
     msgErrorPhone: "",
     btn_disabled: true,
   });
+  const [load, setLoad] = useState(false)
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -94,7 +96,11 @@ const ModalProduct = ({
     event.preventDefault();
     
 
-    if( error.validateErrorEmail !== '' && error.validateErrorEmail === false && error.validateErrorPhone !== '' && error.validateErrorPhone === false) {
+    if( error.validateErrorEmail !== '' &&
+        error.validateErrorEmail === false &&
+        error.validateErrorPhone !== '' &&
+        error.validateErrorPhone === false ) {
+      setLoad(true);
       const url = "https://mpryrback.herokuapp.com/api/mails";
       const headersRequest = {
         "Content-Type": "application/json",
@@ -117,11 +123,13 @@ const ModalProduct = ({
           return response.json();
         })
         .then(() => {
+          setLoad(false);
           alert("Gracias por escribirnos, le responderemos a la brevedad posible.");
-      handleClose();
+          handleClose();
         })
         .catch(() => {
-          console.log("Por favor, intente más tarde.");
+          alert("Ocurrio un error, por favor intente de nuevo.");
+          setLoad(false);
         });
       
     }else{
@@ -287,6 +295,7 @@ const ModalProduct = ({
                       as="textarea"
                       className="campo_comentario"
                       rows="3"
+                      maxLength="400"
                       placeholder="Este mensaje llegara directo a nuestros expertos en materias primas."
                       title="Cotice directamente por este campo."
                       onChange={(event) => handleInputChange(event.target)}
@@ -310,16 +319,17 @@ const ModalProduct = ({
         </Modal.Body>
 
         <Modal.Footer>
-          <Button
-            className="button_send"
-            size="lg"
-            type="submit"
-            onClick={handleSubmit}
-            disabled={error.btn_disabled && !data.terminos}
-          >
-            Consulta directa
-          </Button>
-          {/* <ButtonSend /> */}
+          <ButtonSend
+          tagName="Consultar"
+          inputName="consultar"
+          callBack={handleSubmit}
+          css="button_send"
+          disable={
+            !error.btn_disabled &&
+            data.terminos
+          }
+          setLoading={load}
+          />
         </Modal.Footer>
       </Modal>
     </>

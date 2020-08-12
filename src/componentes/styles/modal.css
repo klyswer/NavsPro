@@ -54,14 +54,34 @@
     cursor: not-allowed;
 }
 
+/* _______________Boton de envio de correo_______________ */
+
+.buttonBasic{
+  padding: 6px 24px;
+  border-radius: 4px;
+}
 .button_send {
-  background: #000040 !important;
-  border: none !important;
+  background: #000040 ;
+  border: none ;
+  color: white;
+}
+.button_send:disabled {
+  opacity: 0.5;
 }
 .button_send:hover {
   background: #000074 !important;
   border: none !important;
 }
+
+.Loaders{
+  width: 40px;
+  margin-right: 35px !important;
+}
+
+.spinner{
+  width: 100%;
+}
+
 
 .title_modal {
   color: white;
@@ -75,7 +95,7 @@
 
 .format_style {
   border: 1px #00007442 solid;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 100%;
   text-align: center;
   padding: 4px 8px;
