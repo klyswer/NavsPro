@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './styles/slider.css';
 
+const slider1 = `${process.env.PUBLIC_URL}/images/mpryr1.jpg`
+const slider2 = `${process.env.PUBLIC_URL}/images/mpryr2.jpg`
+const slider3 = `${process.env.PUBLIC_URL}/images/mpryr3.jpg`
+const slider4 = `${process.env.PUBLIC_URL}/images/mpryr4.jpg`
+
 // Objetos JSON
 
 function Slider(props) {
@@ -19,7 +24,7 @@ function Slider(props) {
       <Carousel.Item>
         <img
           className="d-block w-100 img_s"
-          src="https://cdn.pixabay.com/photo/2017/05/23/16/23/soap-dispenser-2337697_960_720.jpg"
+          src={slider1}
           alt="0 slide"
         />
 
@@ -34,7 +39,7 @@ function Slider(props) {
         <img
           className="d-block w-100 img_s"
           
-          src="./images/detergentP.jpg"
+          src={slider2}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -47,7 +52,7 @@ function Slider(props) {
       <Carousel.Item>
         <img
           className="d-block w-100 img_s"
-          src="https://cdn.pixabay.com/photo/2017/05/23/16/23/soap-dispenser-2337697_960_720.jpg"
+          src={slider3}
           alt="Second slide"
         />
 
@@ -61,7 +66,7 @@ function Slider(props) {
       <Carousel.Item>
         <img
           className="d-block w-100 img_s"
-          src="./images/detergente.jpg"
+          src={slider4}
           alt="Third slide"
         />
 
