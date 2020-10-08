@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from 'react-redux'
 import {Card, Container, Col, Row} from "react-bootstrap";
 import './styles/galery.css';
+import {reducirDescripcion} from '../utils/FormatUtil'
 
 // Objetos JSON
 // import productList from "./productList.json";
@@ -36,7 +37,7 @@ function Galery({ lista, titleGalery}) {
                     <Card.Title className="card_title" >{titleCase(item.title)}</Card.Title>
                     <Card.Img variant="top" src={process.env.PUBLIC_URL + item.rutaImg} />
                     <Card.Text className="caja_texto_cards">
-                      {item.descript}
+                      { reducirDescripcion(item.descript) }
                     </Card.Text>
 
                     <ModalProduct //Boton de Ver detalle

@@ -124,11 +124,11 @@ const ModalProduct = ({
         })
         .then(() => {
           setLoad(false);
-          alert("Gracias por escribirnos, le responderemos a la brevedad posible.");
+          alert("Gracias por escribir a R&R materias primas, le responderemos a la brevedad posible.");
           handleClose();
         })
         .catch(() => {
-          alert("Ocurrio un error, por favor intente de nuevo.");
+          alert("Ocurrio un error, por favor contactenos a nuestro número: +56 2 2234 4343, le agradecemos su tiempo.");
           setLoad(false);
         });
       
@@ -312,6 +312,7 @@ const ModalProduct = ({
                       onChange={(event) => handleInputChange(event.target)}
                     />
                   </Form.Group>
+                  <div className="terminos">Los precios e imagenes son referenciales, descargue la ficha técnica o consulte al vendedor cualquier duda.</div>
                 </Form>
               </Row>
             </Col>

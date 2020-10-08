@@ -42,7 +42,7 @@
   transition-delay: 0.1s;
 }
 .widt90 {
-  width: 90px;
+  width: 95px;
 }
 .pdf_ficha a:hover {
   color: rgb(250, 4, 4);
@@ -138,7 +138,7 @@ label:hover, label:focus, label:active{
 
 textarea.campo_comentario{
   resize: none !important;
-  height: 60px !important;
+  height: 213px !important;
 }
 
 input[type='email'],input[type='text'],textarea.campo_comentario{
@@ -186,6 +186,35 @@ input[type='email']::placeholder,input[type='text']::placeholder,textarea::place
   margin-bottom: auto;
 }
 
+.form-check{
+  margin-left: 15px;
+}
+.terminos{
+  font-size: 12px;
+  color: #4d4d4d;
+  text-align: end;
+}
 
+/* ______________________________Media queries________________________________ */
 
+@media (max-width: 575.98px) {
+  textarea.campo_comentario{
+    height: 100px !important;
+  }
 
+  .terminos{
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}

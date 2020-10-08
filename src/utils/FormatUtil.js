@@ -236,7 +236,6 @@ export const obtenerNombreMeses = (numeroMes) => {
  * Método que recibe una cadena  de 9 caracteres y NO valida numero  o dimension
  * un string con el formato 'NN****NNN' donde N es igual al resto de los numeros
  */
-
 export const ocultarDatosTelefono = (telefono) => {
   const telefonoParseStrin = `${telefono}`;
   const newTelefono = telefonoParseStrin.split("");
@@ -247,5 +246,20 @@ export const ocultarDatosTelefono = (telefono) => {
   }
     newTelefono.splice(0, 5, "+", "5","6","9","*", "*", "*", "*");
     return newTelefono.toString().replace(/,/g, "");
+};
+
+/**
+ * Método que recibe una cadena  (descripción) producto y cuenta los caracteres
+ * si la cadena supera los 80 caracteres elimina el resto de caracteres y coloca "..."
+ */
+export const reducirDescripcion = (descripcion) => {
+  const separaCaracteres = descripcion.split("");
+  const numeroCaracteres = separaCaracteres.length;
+  if (numeroCaracteres > 80) {
+    const resto = numeroCaracteres-80
+    separaCaracteres.splice(80, resto, ".", ".",".");
+  return separaCaracteres.toString().replace(/,/g, "");
+  }
+    return separaCaracteres.toString().replace(/,/g, "");
     
 };

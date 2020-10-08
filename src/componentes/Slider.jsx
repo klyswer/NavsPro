@@ -30,7 +30,7 @@ function Slider(props) {
 
         <Carousel.Caption>
           <h3 className="title_slider">
-            <span>{props.titleImg3}</span>
+            <span>{props.titleImg1}</span>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -44,7 +44,7 @@ function Slider(props) {
         />
         <Carousel.Caption>
           <h3 className="title_slider">
-            <span>{props.titleImg1}</span>
+            <span>{props.titleImg2}</span>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -58,7 +58,7 @@ function Slider(props) {
 
         <Carousel.Caption>
           <h3 className="title_slider img_s">
-            <span>{props.titleImg2}</span>
+            <span>{props.titleImg3}</span>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -72,7 +72,7 @@ function Slider(props) {
 
         <Carousel.Caption>
           <h3 className="title_slider">
-            <span>{props.titleImg3}</span>
+            <span>{props.titleImg4}</span>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>

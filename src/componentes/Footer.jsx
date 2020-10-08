@@ -13,7 +13,7 @@ function Footer() {
 
                 <p className="">Ingresa en maps o wase: La Capilla 7630, Cerro Navia.</p>
 
-                <iframe title="Donde encontrarnos Mp-R&R" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185.37884018547322!2d-70.74417124808969!3d-33.41504141081667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c16107b5d4bb%3A0xe2a2979fa55c79f2!2sLa%20Capilla%207630%2C%20Cerro%20Navia%2C%20Regi%C3%B3n%20Metropolitana!5e1!3m2!1ses!2scl!4v1589283003599!5m2!1ses!2scl" width="500" height="350" frameBorder="0" allowFullScreen="" aria-hidden="false" tabIndex="0">
+                <iframe title="Donde encontrarnos R&RMP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185.37884018547322!2d-70.74417124808969!3d-33.41504141081667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c16107b5d4bb%3A0xe2a2979fa55c79f2!2sLa%20Capilla%207630%2C%20Cerro%20Navia%2C%20Regi%C3%B3n%20Metropolitana!5e1!3m2!1ses!2scl!4v1589283003599!5m2!1ses!2scl" width="500" height="350" frameBorder="0" allowFullScreen="" aria-hidden="false" tabIndex="0">
                 </iframe>
 
             </div>
@@ -36,7 +36,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-12 mb-3">
               <p className="copyright-text">Copyright &copy; 2020 Todos los derechos reservados.
-                <a href="# "> www.mp-ryr.com</a>.
+                <a href="# "> www.ryrmp.com</a>.
               </p>
             </div>
 
