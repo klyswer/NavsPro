@@ -29,7 +29,7 @@ class Header extends Component {
             <Nav>
               <Nav.Link className="btn_header">ventas@detergentesryr.cl</Nav.Link>
               <Nav.Link className="btn_header" eventKey={2}>
-                +56 2 2234 4343 
+                +56 2 2643 4128
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
