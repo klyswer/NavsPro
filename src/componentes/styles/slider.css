@@ -3,7 +3,8 @@
     height: 580px;
 }
 .title_slider {
-    background: rgba(3, 29, 54, 0.8);
+    /* background: rgba(3, 29, 54, 0.8); */
+    background: rgba(0, 0, 0, 0.6);
     height: 120px;
     transform: translateY(-100px);
     font-size: 40px;
@@ -36,7 +37,7 @@
         margin-top: 20px;
     }
     .img_s{
-        height: 400px;
+        height: 320px;
     }
 }
 

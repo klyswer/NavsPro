@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+html{
+  font-family: 'Poppins', sans-serif !important;
+}
+  
+
+
+body{
+  background: linear-gradient(to right, #92ADEC80, #E6D8FB80);
+  
+}
 .App{
   text-align: center;
 }
 
 .btn-white{
   background: gray;
+}
+.carousel-control-next-icon, .carousel-control-prev{
+  display: none !important;
 }
 

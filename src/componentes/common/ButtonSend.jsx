@@ -1,7 +1,10 @@
 import React from "react";
 import spinner from "../assest/blue-spin.gif";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const ButtonSend = ({
+  svg,
   tagName,
   inputName,
   callBack,
@@ -42,7 +45,9 @@ const ButtonSend = ({
           disabled={inEnable(disable)}
         >
           {" "}
-          {tagName}
+          {tagName }
+          {" "}
+          {svg && <FontAwesomeIcon icon={faPaperPlane} />}
           {" "}
         </button>
       )}

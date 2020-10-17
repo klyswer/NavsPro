@@ -9,6 +9,17 @@ import {
 import ListPrices from "./common/ListPrices";
 import ButtonSend from "./common/ButtonSend"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+
+// faBorderAll
+// faCubes
+// faFacebookF
+// faLocationArrow
+const icon_envio = <FontAwesomeIcon icon={faPaperPlane} />
+
+
+
 const ModalProduct = ({
   id,
   _id,
@@ -145,7 +156,7 @@ const ModalProduct = ({
     <>
       <div className="botones_info">
         <Button className="btn_contactar" onClick={handleShow}>
-          Consultar
+        {icon_envio} Consultar
         </Button>
         {rutaFicha !== "undefined" && !!rutaFicha ? (
           <div className="pdf_ficha">
@@ -321,6 +332,7 @@ const ModalProduct = ({
 
         <Modal.Footer>
           <ButtonSend
+          svg={true}
           tagName="Consultar"
           inputName="consultar"
           callBack={handleSubmit}

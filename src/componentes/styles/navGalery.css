@@ -16,11 +16,11 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1c17b8 !important;
-    border-radius: 50px !important;
-    /* padding: 5px; */
-
+  color: #fff;
+  background: #396afc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2948ff, #396afc) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50px !important;
 }
 
 .nav-pills .nav-link {

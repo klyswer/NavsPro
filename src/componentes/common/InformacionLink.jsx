@@ -14,7 +14,7 @@ const InformacionLink = ({
   spanLink,
   link
 }) => {
-  if (buttonLink==="douglas") {
+  if (buttonLink) {
     return (
       <>
         <div className="contenido_con_btn">

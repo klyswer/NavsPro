@@ -2,8 +2,16 @@ import React, { Component} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import './styles/header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faStore, faRoute, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+// import {faEdge} from '@fortawesome/free-brands-svg-icons'
 
 const logo = `${process.env.PUBLIC_URL}/images/LOGO_RYR.png`
+
+const icon_producto = <FontAwesomeIcon icon={faStore} />
+const icon_direccion = <FontAwesomeIcon icon={faRoute} />
+const icon_mail = <FontAwesomeIcon icon={faEnvelope} />
+const icon_phone = <FontAwesomeIcon icon={faMobileAlt} />
 
 class Header extends Component {
   
@@ -23,14 +31,12 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link className="btn_header" href="#Productos">Productos</Nav.Link>
-              <Nav.Link className="btn_header" href="#Direccion">Dirección</Nav.Link>
+              <Nav.Link className="btn_header" href="#Productos"> {icon_producto} Productos</Nav.Link>
+              <Nav.Link className="btn_header" href="#Direccion">{icon_direccion} Dirección</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link className="btn_header">ventas@detergentesryr.cl</Nav.Link>
-              <Nav.Link className="btn_header" eventKey={2}>
-                +56 2 2643 4128
-              </Nav.Link>
+            <Nav.Link className="btn_header">{icon_mail} ventas@detergentesryr.cl</Nav.Link>
+              <Nav.Link className="btn_header" eventKey={2}>{icon_phone} +56 2 2643 4128</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

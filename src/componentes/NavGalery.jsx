@@ -2,7 +2,15 @@ import React from "react";
 import { connect } from 'react-redux';
 import {Nav, Col} from "react-bootstrap";
 import './styles/navGalery.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faList, faAtom, faWind  } from '@fortawesome/free-solid-svg-icons'
 
+// faBorderAll
+// faCubes
+
+const icon_todos = <FontAwesomeIcon icon={faList} />
+const icon_materias = <FontAwesomeIcon icon={faAtom} />
+const icon_esencias = <FontAwesomeIcon icon={faWind} />
 
 const NavGalery = ({filtrarProducts, mostrarProduc }) => {
   // const [select, setSelect] = useState(false);
@@ -29,19 +37,19 @@ const NavGalery = ({filtrarProducts, mostrarProduc }) => {
         >
           <Nav.Item>
             <Nav.Link className="link_style" eventKey="all" cat="all">
-              Todas
+             {icon_todos} Todas
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link className="link_style"  eventKey="Mp">
-              Materias
+             {icon_materias} Materias
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link className="link_style" eventKey="Es" cat="Es">
-              Esencias
+             {icon_esencias} Esencias
             </Nav.Link>
           </Nav.Item>
         </Nav>

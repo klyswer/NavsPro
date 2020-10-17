@@ -3,23 +3,18 @@
   "name": "Expertos en distribución de materias primas para producción de artículos de aseo.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icono.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "LOGO_RYR.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/index.html",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#6200ee",
   "background_color": "#ffffff"
 }

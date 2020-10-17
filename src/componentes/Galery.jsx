@@ -4,8 +4,6 @@ import {Card, Container, Col, Row} from "react-bootstrap";
 import './styles/galery.css';
 import {reducirDescripcion} from '../utils/FormatUtil'
 
-// Objetos JSON
-// import productList from "./productList.json";
 
 // Componentes
 import ModalProduct from "./ModalProduct.jsx";

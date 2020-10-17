@@ -11,24 +11,29 @@
     margin-bottom: 10px;
 }
 .caja_texto_cards {
-  min-height: 100px;
+  min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #79778c;
+  letter-spacing: -0.1px;
+  margin: 0px 15px;
+  line-height: 15px;
 }
 
 .Bg_titleGalery {
-  /* background: rgba(0, 92, 230, 0.8); */
-  background: #000040;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 10em;
   margin: auto;
   padding: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* word-break: initial;
-    hyphens: auto; */
+
 }
 
 /* .Bar_titleGalery {
@@ -41,6 +46,7 @@
 .titleGalery {
   color: rgb(255, 255, 255);
   font-weight: bold;
+  
 }
 
 /*---------------------------------- Cards Galery ----------------------------------*/
