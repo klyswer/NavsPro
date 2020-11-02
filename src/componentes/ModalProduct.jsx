@@ -155,7 +155,7 @@ const ModalProduct = ({
   return (
     <>
       <div className="botones_info">
-        <Button className="btn_contactar" onClick={handleShow}>
+        <Button className="btn_contactar mt-2 mb-3" onClick={handleShow}>
         {icon_envio} Consultar
         </Button>
         {rutaFicha !== "undefined" && !!rutaFicha ? (

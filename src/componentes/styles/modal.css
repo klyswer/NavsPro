@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  flex-flow: column-reverse;
 }
 .btn_contactar {
   /* background-color: #1c17b8 !important; */
@@ -37,7 +37,7 @@
 .pdf_ficha a,
 .pdf_ficha div {
   color: rgb(209, 69, 69);
-  font-weight: 600;
+  font-weight: 400;
   transition-property: color;
   transition-duration: 0.15s;
   transition-timing-function: ease;
