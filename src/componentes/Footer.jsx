@@ -29,8 +29,8 @@ function Footer() {
               <ul className="footer-links text-left">
                 <li><div>Materias Primas R&R, Región Metropolitana.</div></li>
                 <li><a href="# ">Dirección: <span>La Capilla 8276A, Cerro Navia</span> </a></li>
-                <li><a href="# ">Telefonos: <span>+56 2 2643 4128 / +569 8188 7859</span> </a></li>
-                <li><a href="# ">Email: <span>ventas@detergentesryr.cl</span></a></li>
+                <li><a href="# ">Telefonos: <span>+56 9 9999 9720 / +569 8188 7859</span> </a></li>
+                <li><a href="# ">Email: <span>mp@distribuidoraryr.cl</span></a></li>
                 <li><a href="# ">Atención: <span>8:00am - 6:00pm</span></a></li>
               </ul>
             </div>

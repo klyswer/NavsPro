@@ -112,7 +112,7 @@ const ModalProduct = ({
         error.validateErrorPhone !== '' &&
         error.validateErrorPhone === false ) {
       setLoad(true);
-      const url = "https://mpryrback.herokuapp.com/api/mails";
+      const url = "https://mpryr-back-prod.herokuapp.com/api/mails";
       const headersRequest = {
         "Content-Type": "application/json",
       };

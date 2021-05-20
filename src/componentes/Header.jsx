@@ -35,8 +35,8 @@ class Header extends Component {
               <Nav.Link className="btn_header" href="#Direccion">{icon_direccion} Dirección</Nav.Link>
             </Nav>
             <Nav>
-            <Nav.Link className="btn_header">{icon_mail} ventas@detergentesryr.cl</Nav.Link>
-              <Nav.Link className="btn_header" eventKey={2}>{icon_phone} +56 2 2643 4128</Nav.Link>
+            <Nav.Link className="btn_header">{icon_mail} mp@distribuidoraryr.cl </Nav.Link>
+              <Nav.Link className="btn_header" eventKey={2}>{icon_phone} +56 9 9999 9720</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
